@@ -1,11 +1,3 @@
-function makeInt(n) {
-    parseInt(n);
-    return (n);
-}
-function makeInt(n) {
-    parseInt("0x2328");
-}
-
 var number;
 function add(a, b){ //add a and b and return the result.
   number = a + b;
@@ -39,9 +31,25 @@ function preserveDecimal(a){ //Parse a as a float (number with decimals) and ret
   number = parseFloat(a, 10);
   return number;
 }
-Advertisements
-
-
-
-
-
+function increment(){
+    var n = 0;
+    n++;
+    return n;
+  }
+  var i = 0;
+  function increment(n){
+    n++;
+    return n;
+  }
+  i=increment(i);
+  function decrement(){
+    var n = 0;
+    n--;
+    return n;
+  }
+  var d = 0;
+  function decrement(n){
+    n--;
+    return n;
+  }
+  d=decrement(d);
